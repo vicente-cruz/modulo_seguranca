@@ -1,0 +1,42 @@
+Invadindo o servidor diretamente ao invés de invadir pelo SITE.
+
+Ataque 1) Pela pasta de acesso público.
+Ex: public_html/, htdocs/, etc...
+
+1) Considerar:
+a) A seguinte estrutura:
+xampp/
+    htdocs/
+        projeto/
+            classes/
+                Carro.php
+            config.php
+            index.php
+
+b) O conteúdo do arquivo index.php:
+...
+require 'config.php';
+require 'classes/Carro.php';
+
+$carro = new Carro();
+echo $carro->andar();
+...
+
+2) Solução:
+a) Colocar os arquivos não públicos fora das pastas public (ex: htdocs/).
+    Ex: Criar a pasta app/ fora do htdocs/ e colocar os arquivos dentro dela.
+xampp/
+    htdocs/
+        projeto/
+            index.php
+    app/
+        config.php
+        classes/Carro.php
+b) Reconfigurar o caminho dos 'requires' para acessar essas pastas dentro do index.php
+...
+require '../../app/config.php';
+require '../../app/classes/Carro.php';
+
+$carro = new Carro();
+echo $carro->andar();
+...
