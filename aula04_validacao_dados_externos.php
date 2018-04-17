@@ -12,11 +12,11 @@
  * FILTER_VALIDADE_EMAIL:
  * FILTER_VALIDADE_REGEX:
  * FILTER_VALIDADE_IP:
+ * FILTER_VALIDADE_ENCODED: p/caracteres especiais são 
+ * FILTER_VALIDADE_SPECIAL_CHARS: converte html em string
  * 
  * Sanitize: Conserta determinado texto
  * FILTER_SANITIZE_STRING: Tira o que precisa tirar para formar a string (default)
- * FILTER_VALIDADE_ENCODED: p/caracteres especiais são 
- * FILTER_VALIDADE_SPECIAL_CHARS: converte html em string
  */
 
 // Validando e-mail
