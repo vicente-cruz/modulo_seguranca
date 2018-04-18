@@ -15,6 +15,5 @@
  * 5) Definir o caminho de 'error_log' FORA DA PASTA PUBLIC! Ex:
  *      ...
  *      error_log = "C:\xampp\php\logs\error.log"
- * 6) 
  */
 ?>
