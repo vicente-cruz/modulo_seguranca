@@ -1,0 +1,3 @@
+<h1>Você pesquisou por: <?php echo htmlspecialchars(filter_input(INPUT_GET,'busca')); ?> </h1>
+<hr/>
+...
